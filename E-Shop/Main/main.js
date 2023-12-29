@@ -187,7 +187,7 @@ const renderProducts = () => {
       const disabled = inCart ? "disabled" : "";
 
       // change the text if already in cart
-      const text = inCart ? "Adicionar ao carrinho" : "Adicionado ao carrinho";
+      const text = inCart ? "Added in Cart" : "Add to Cart";
 
       return `
     <div class="product">

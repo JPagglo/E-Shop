@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Shop</title>
 
     <!-- Bootstrap Icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+     rel="stylesheet">
+
 
     <!-- Link CSS-->
-    <link rel="stylesheet" href="./CSS/style.css"/>
+    <link rel="stylesheet" href="./CSS/style.css" />
 </head>
+
 <body>
     <nav>
         <div class="container">
             <strong class="Logo">E-Shop</strong>
-            <i class="bi bi-cart-fill"></i>
-            <button class="cart-quantity">0</button>
+            <button class="cart-btn">
+                <span>Carrinho</span>
+                <i class="bi bi-cart"></i>
+                
+                <small class="cart-quantity">0</small>
+            </button>
         </div>
     </nav>
+
     <main>
         <div class="container">
-            <div class="products"></div>
+            <div class="products">
+                <!-- <div class="produtc">
+                    <img src="https://placeholde.co/400" alt=""/>
+                    <h3>Nome do Produt</h3>
+                    <h5>R$ 50,00</h5>
+                    <button>ADICIONAR AO CARRINHO</button>
+                </div> colado no Main JS -->
+            </div>
         </div>
     </main>
 
-    <div class="cart-overlay"></div>
-    
-    <div class="cart">
+    <div class="cart-overlay show"></div>
+
+    <div class="cart show">
         <div class="cart-header">
-            <i class=" bi bi-arrow-right cart-icon"></i>
+            <i class=" bi bi-arrow-right cart-close"></i>
             <h2>Seu carrinho</h2>
         </div>
-        <div class="cart-body"></div>
-      <div class="cart-footer">
-        <div>
-          <strong>Total</strong>
-          <span class="cart-total">0</span>
+        <div class="cart-body">
+            <div class="class-item">
+                <img src="https://placehold.co/100" alt=""/>
+                <div class="cart-item-detail">
+                    <h3>Npme do Produto</h3>
+                    <h5>$99</h5>
+                    <div class="cart-item-amount">
+                        <i class="bi bi-dash-lg"></i>
+                        <span class="qty">0</span>
+                        <i class="bi bi-plus-lg"></i>
+                        <span class="cart-item-amount"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cart-empty">Seu carrinho esta vazio.</div>
         </div>
-        <button class="cart-clear">Clear Cart</button>
-        <button class="checkout">Checkout</button>
-      </div>
+        <div class="cart-footer">
+            <div>
+                <strong>Total</strong>
+                <span class="cart-total">100</span>
+            </div>
+            <button class="cart-clear">Clear Cart</button>
+            <button class="checkout">Checkout</button>
+        </div>
     </div>
-    </div>
+
     <script src="./Main/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
+
 </html>
